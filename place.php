@@ -128,9 +128,9 @@ $res_gallery=mysqli_query($conn,$sql_gallery);
 								
 								<!-- <li role="presentation"><a href="review.php?id=<?php echo $place_id?>" >Review</a></li> -->
 
-								<li ><a href="res.php?id=<?php echo $place_id ?>" aria-controls="messages">Restaurant</a></li>
+								<!-- <li ><a href="res.php?id=<?php echo $place_id ?>" aria-controls="messages">Restaurant</a></li>
 
-								<li role="presentation"><a href="hotel.php?id=<?php echo $place_id ?>" >Hotel</a></li>
+								<li role="presentation"><a href="hotel.php?id=<?php echo $place_id ?>" >Hotel</a></li> -->
 
 								 <?php 
                       include("page_content/place_section.php");

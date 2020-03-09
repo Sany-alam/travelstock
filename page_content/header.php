@@ -102,11 +102,11 @@ if(isset($_GET['logout'])){
 					<?php 
                     if($user_id==NULL){
 					?>
-					<ul class="nav navbar-nav navbar-right">
-						<li class="br-right"><a href="#"  data-toggle="modal" data-target="#signin"><i class="login-icon ti-user"></i>Join</a></li>
+					<!-- <ul class="nav navbar-nav navbar-right">
+						<li class="br-right"><a href="#"  data-toggle="modal" data-target="#signin"><i class="login-icon ti-user"></i></a></li>
 						
 					</ul>
-
+ -->
 					<?php
                   }
                   else{

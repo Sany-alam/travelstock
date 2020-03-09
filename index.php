@@ -48,16 +48,16 @@ $res=mysqli_query($conn,$sql);
 						<div class="sl-box">
 							<select class="wide form-control br-1" name="district" required>
 <option value="">District</option>
-<!-- <option value="Any">Any</option> -->
+<option value="Any">Any</option>
 <option value="Chittagong">Chittagong</option>
-<!-- <option value="Sylhet">Sylhet</option>
+<option value="Sylhet">Sylhet</option>
 <option value="Khulna">Khulna</option>
 <option value="Dhaka">Dhaka</option>
 <option value="Comilla">Comilla</option>
 <option value="Rangpur">Rangpur</option>
 <option value="Dinajpur">Dinajpur</option>
 <option value="Rajshahi">Rajshahi</option>
-<option value="Bagura">Bagura</option> -->
+<option value="Bagura">Bagura</option>
 
 </select>
 						</div>
@@ -153,7 +153,7 @@ $res=mysqli_query($conn,$sql);
 
 
 <!-- ====================== Popular Tour ================= -->
-<section class="gray-bg">
+<!-- <section class="gray-bg">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -168,7 +168,7 @@ $res=mysqli_query($conn,$sql);
 
 		<div class="row">
 
-			<!-- Single Destination -->
+		
 
 			<?php
 
@@ -263,11 +263,11 @@ $res=mysqli_query($conn,$sql);
 
 			?>
 
-			<!-- Single Destination -->
+
 
 		</div>
 	</div>
-	</section>
+	</section> -->
 
 	<div class="clearfix"></div>
 
@@ -279,10 +279,10 @@ $res=mysqli_query($conn,$sql);
 
 
 	<!-- ================= footer start ========================= -->
-	<?php  
-	include("page_content/footer.php");
+	<!-- <?php  
+	//include("page_content/footer.php");
 
-	?>
+	?> -->
 
 	<!-- Sign Up Window Code -->
 	<div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">

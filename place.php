@@ -7,7 +7,7 @@ include("page_content/header.php");
 error_reporting(E_ALL ^ E_WARNING); 
 $place_id=$_REQUEST['id'];
 
-$sql="Select * from place_jayed where id=$place_id";
+$sql="Select * from place where id=$place_id";
 $res=mysqli_query($conn,$sql);
 $row=mysqli_fetch_array($res);
 
@@ -126,7 +126,7 @@ $res_gallery=mysqli_query($conn,$sql_gallery);
 							<ul class="nav nav-tabs" role="tablist">
 								<li role="presentation" class="active"><a href="place.php?id=<?php echo $place_id?>" ><i class="ti-user"></i>Overview</a></li>
 								
-								<!-- <li role="presentation"><a href="review.php?id=<?php echo $place_id?>" >Review</a></li> -->
+								<li role="presentation"><a href="review.php?id=<?php echo $place_id?>" >Review</a></li>
 
 								<!-- <li ><a href="res.php?id=<?php echo $place_id ?>" aria-controls="messages">Restaurant</a></li>
 
@@ -927,7 +927,7 @@ $res_gallery=mysqli_query($conn,$sql_gallery);
 			
 		<!-- ================= footer start ========================= -->
 		<?php
-          include("page_content/footer.php");
+         // include("page_content/footer.php");
 		?>
 		
 		<!-- Sign Up Window Code -->

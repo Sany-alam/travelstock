@@ -4,7 +4,7 @@ include("connection.php");
 
 include("page_content/header.php");
 error_reporting(E_ALL ^ E_WARNING);
-$sql="Select * from place_jayed where id<=12";
+$sql="Select * from place where id<=12";
 $res=mysqli_query($conn,$sql);
 
 
@@ -77,7 +77,8 @@ $res=mysqli_query($conn,$sql);
 <option value="Museum">Museum</option>
 <option value="Park">Park</option>
 
-<option value="river">River</option <option value="mosque">Mosque</option>
+<option value="river">River</option>
+ <option value="mosque">Mosque</option>
 </select>
 						</div>
 					</div>

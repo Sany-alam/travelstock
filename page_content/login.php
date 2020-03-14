@@ -13,9 +13,9 @@ ini_set('error_log', 'ussd-app-error.log');
      //session_start();
 	$email=$_POST['email'];
 	$password=$_POST['password'];
-	file_put_contents('b.txt', $email.$password);
+	//file_put_contents('b.txt', $email.$password);
 
-	 $sql="Select * from user_jayed where user_email='$email' and user_password='$password'";
+	 $sql="Select * from user where user_email='$email' and user_password='$password'";
 
 	 $res=mysqli_query($conn,$sql);  
 	 $row=mysqli_fetch_array($res);

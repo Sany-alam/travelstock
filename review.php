@@ -5,7 +5,7 @@ include("connection.php");
 include("page_content/header.php");
 $place_id=$_REQUEST['id'];
 
-$sql="Select * from place_jayed where id=$place_id";
+$sql="Select * from place where id=$place_id";
 $res=mysqli_query($conn,$sql);
 $row=mysqli_fetch_array($res);
 $place_name=$row["place_name"];
@@ -93,9 +93,9 @@ $res_police=mysqli_query($conn,$sql_police);
 
 						<li role="presentation" class="active" ><a href="review.php?id=<?php echo $place_id?>" >Review</a></li>
 
-						<li ><a href="res.php?id=<?php echo $place_id ?>" aria-controls="messages">Restaurant</a></li>
+						<!-- <li ><a href="res.php?id=<?php echo $place_id ?>" aria-controls="messages">Restaurant</a></li>
 
-						<li role="presentation"><a href="hotel.php?id=<?php echo $place_id ?>" >Hotel</a></li>
+						<li role="presentation"><a href="hotel.php?id=<?php echo $place_id ?>" >Hotel</a></li> -->
 
 						<?php 
 						include("page_content/place_section.php");
@@ -140,7 +140,7 @@ $res_police=mysqli_query($conn,$sql_police);
 										while($row3=mysqli_fetch_array($res3))
 											{  $id=$row3['user_id'];
 
-										$sql4="SELECT * FROM user_jayed where id=$id";
+										$sql4="SELECT * FROM user where id=$id";
 										$res4=mysqli_query($conn,$sql4);
 
 										$row4=mysqli_fetch_array($res4);
@@ -595,7 +595,7 @@ $res_police=mysqli_query($conn,$sql_police);
 </div>
 <!-- ================= footer start ========================= -->
 <?php
-include("page_content/footer.php");
+//include("page_content/footer.php");
 ?>
 
 <!-- Sign Up Window Code -->

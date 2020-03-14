@@ -14,15 +14,7 @@ if(isset($_POST['email'])){
 	$r_password=$_POST['password_confirmation'];
 	
 	
-	  $mail = new PHPMailer();
-                $mail->setFrom('jayedhassan557@gmail.com');
-                $mail->addAddress($email,$name);
-                $mail->Subject = "Please verify email!";
-                $mail->isHTML(true);
-                $mail->Body = "
-                Please Click On The Verify<br><br>
-                
-                <a href='http://www.fff-bd.com/travelstock/confirmation.php?email=$email'> Verify </a>";
+
 
                 if ($mail->send())
                     $msg = "You have been registered! Please verify your email!";
@@ -34,7 +26,7 @@ if(isset($_POST['email'])){
 	
 	
 	//file_put_contents('a.txt', $email.$password);
-	$sql2="SELECT * FROM user_jayed where user_email='$email'";
+	$sql2="SELECT * FROM user where user_email='$email'";
 	$res2=mysqli_query($conn,$sql2);
 	$num_rows=mysqli_num_rows($res2);
 
@@ -42,7 +34,7 @@ if(isset($_POST['email'])){
 
 		if($password==$r_password){
 
-			$sql="INSERT INTO user_jayed(user_name,user_email,user_password) VALUES ('$name','$email','$password')";
+			$sql="INSERT INTO user(user_name,user_email,user_password) VALUES ('$name','$email','$password')";
 			$res=mysqli_query($conn,$sql);  
 			if($res)
 			{
